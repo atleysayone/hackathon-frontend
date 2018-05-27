@@ -1,0 +1,31 @@
+
+<div class="container-fluid">
+ <div class="row">
+	<!-- <button onclick="flip()">flip the card</button> -->
+   <div *ngFor="let product of products" class="col-sm-3">
+    <div class="card">
+
+      <div class="front">
+        <img class="card-img-top crd-img" [src]="LOGO" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{product.id}}</h5>
+          <p class="card-text">{{product.name}}.</p>
+          <a (click)="onSelect(product)" class="btn btn-info">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div *ngIf="selectedProduct">
+
+  <h2>{{ selectedProduct.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{selectedProduct.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedProduct.name" placeholder="name">
+    </label>
+  </div>
+
+</div>
