@@ -14,17 +14,10 @@ import { Product } from './product';
    selectedProduct: Product;
    selectedCard : string;
 
-
    constructor() { }
-
    ngOnInit() {
    }
-
    onSelect(product: Product): void {
      this.selectedProduct = product;
    }
-   clickEvent(product_id: string): void {
-     this.selectedCard = 'card'+product_id;
-   }
-
  }

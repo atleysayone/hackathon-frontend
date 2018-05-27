@@ -18,3 +18,5 @@ body { margin: 0; padding-top: 100px!important; font-size: 20px; color: #000;}
 }
 .card.flipped { -webkit-transform: rotateY( 180deg ); -moz-transform: rotateY( 180deg );  -o-transform: rotateY( 180deg );transform: rotateY( 180deg );
 }
+.row { padding-left: 110px; }
+.details { padding-left: 50px; }
